@@ -1,0 +1,22 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: var(--inline-spacing);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.costBlock {
+    display: flex;
+    gap: var(--inline-spacing);
+    align-items: center;
+}
+
+.costText {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}

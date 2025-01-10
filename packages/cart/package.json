@@ -1,0 +1,31 @@
+{
+  "name": "@repo/cart",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "imports": {
+    "#*": "./src/*"
+  },
+  "dependencies": {
+    "@repo/meals": "*",
+    "@repo/tables": "*",
+    "@repo/ui": "*"
+  },
+  "exports": {
+    ".": {
+      "default": "./types.ts"
+    },
+    "./api": {
+      "default": "./api/index.ts"
+    },
+    "./ui": {
+      "default": "./ui/index.ts"
+    },
+    "./model": {
+      "default": "./model/index.ts"
+    }
+  }
+}

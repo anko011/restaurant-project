@@ -1,0 +1,1 @@
+export { CurrentTableStoreProvider, useCurrentTableStore } from './current-table.provider';

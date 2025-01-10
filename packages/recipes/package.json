@@ -1,0 +1,27 @@
+{
+  "name": "@repo/recipes",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    "./entities": {
+      "default": "./src/entities/index.ts"
+    },
+    "./features": {
+      "default": "./src/features/index.ts"
+    },
+    "./widgets": {
+      "default": "./src/widgets/index.tsx"
+    }
+  },
+  "dependencies": {
+    "@repo/meals": "*",
+    "@repo/ui": "*"
+  }
+}

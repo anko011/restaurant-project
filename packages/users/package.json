@@ -1,0 +1,27 @@
+{
+  "name": "@repo/users",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "default": "./types.ts"
+    },
+    "./api": {
+      "default": "./api/index.ts"
+    },
+    "./ui": {
+      "default": "./ui/index.ts"
+    },
+    "./model": {
+      "default": "./model/index.ts"
+    }
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "@repo/bookings": "*"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "kitchen",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "dev": "vite -c ./vite.config.ts",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@repo/meals": "*",
+    "@repo/ui": "*",
+    "@repo/cart": "*",
+    "@repo/orders": "*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  }
+}

@@ -1,0 +1,13 @@
+.root {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .root {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+

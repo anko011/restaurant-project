@@ -1,0 +1,6 @@
+.root {
+    background: var(--surface-overlay);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,103 @@
+:root {
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 1rem;
+    --spacing-4: 1.5rem;
+    --spacing-5: 2rem;
+    --spacing-6: 3rem;
+    --spacing-7: 4rem;
+    --spacing-8: 5rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    display: grid;
+    background-color: var(--surface-ground);
+    color: var(--text-color);
+    grid-template-rows: 60px auto;
+    min-height: 100vh;
+    grid-template-areas: "h"
+                         "c";
+}
+
+.rootWithNavigation {
+    grid-template-columns: 200px auto;
+    grid-template-areas: "h h"
+                         "n c"
+}
+
+.rootWithNavigation .navigation {
+    grid-area: n;
+}
+
+.navigation {
+    margin: var(--spacing-4);
+}
+
+.navigation + .content {
+    margin-left: calc(var(--spacing-4) * 2);
+}
+
+.header {
+    grid-area: h;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 var(--spacing-4);
+    background-color: var(--surface-0);
+    border-bottom: 1px solid var(--surface-border);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header > * {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.content {
+    grid-area: c;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-4);
+}
+
+
+.headerActions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .root {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 60px min-content auto;
+        grid-template-areas: "h"
+                             "n"
+                             "c";
+        background-color: var(--surface-ground);
+        color: var(--text-color);
+        font-family: 'Roboto', sans-serif;
+        height: auto;
+    }
+
+    .content {
+        margin-left: var(--spacing-4)!important;
+        margin-top: 0;
+    }
+}

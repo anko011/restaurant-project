@@ -1,0 +1,22 @@
+.root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.root > :global(.pi-shopping-cart) {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    right: -75%;
+}

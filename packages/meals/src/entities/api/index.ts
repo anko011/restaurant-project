@@ -1,0 +1,1 @@
+export { DishesRepository } from './dishes.repository';

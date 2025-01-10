@@ -5,5 +5,10 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    "./react": {
+      "default": "./react-library.json"
+    }
   }
 }

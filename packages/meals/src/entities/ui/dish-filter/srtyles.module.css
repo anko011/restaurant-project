@@ -1,0 +1,5 @@
+.root {
+    width: 500px;
+    display: flex;
+    gap: var(--spacing-4);
+}

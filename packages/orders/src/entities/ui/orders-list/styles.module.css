@@ -1,0 +1,49 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 150px auto 100px;
+    gap: var(--spacing-4);
+}
+
+.itemHeader {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.itemHeader > h3 {
+    margin: 0;
+}
+
+.itemImage {
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .03), 0 0 2px rgba(0, 0, 0, .06), 0 2px 6px rgba(0, 0, 0, .12);
+}
+
+.itemFooter {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.itemCost {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.itemHeaderInfo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
